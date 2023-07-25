@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+
+        <title> shopping </title>
+        <meta charset="utf-8" >
+        <link href="css/all.min.css" rel="stylesheet">
+        <link href="css1/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="co.css">
+       
+            <body ng-app="AngularshowhideApp">
+                
+                <div ng-controller="showhidectrl">
+              
+                
+                <div class="form">
+    
+                    <div class="login-form">
+                        <a href="#" ng-click="isShowHide('show')" value="Show Div">
+                        <i class="fas fa-times">
+                       
+                    
+                        
+                    </i>
+                         <a href="#" ng-click="isShowHide('hide')" value="Hide Div">
+                      
+                        
+                <!--Show Div Based on showval-->
+                <button ng-show="showval">شحن مجاني</button><br />
+                <!--Hide Div Based on showval-->
+               
+                <div ng-hide="formcancel">
+                  
+                    <fieldset ng-app="" ng-init="price-0;qty-0">
+         
+                        producet:  
+                            
+                        <select ng-model="price">
+                            <option value="3000"> HP SCreen 50</option>
+                            <option value="3000"> HP SCreen 50</option>
+                            <option value="3000"> HP SCreen 50</option>
+                            <option value="3000"> HP SCreen 50</option>
+                            <option value="3000"> HP SCreen 50</option>
+                        </select>
+                        Quantity:<input ng-model="qty"/>
+                        <h1>price:{{price}}</h1>
+                        <h1>Total:{{price * qty}}</h1>
+                    
+                    
+                    
+                               
+           
+                     
+                       
+                   
+                          </fieldset>
+                        </div>
+                    </div>
+
+                    
+                </div>
+                </div>
+        
+         
+  
+               
+              
+      
+         
+           
+      
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="angular-1.8.2/angular.min.js"></script>
+      <script src="jj.js"></script>
